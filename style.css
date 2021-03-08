@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: yellow;*/
+    background-image: url(wall5.jpg);
+    background-size: cover;
+    border: 2px solid yellow;
+}
+
+#character{
+    width: 50px;
+    height: 50px;
+    /*background-color: yellowgreen;*/
+    background-image: url(domestic-cat-shape.png);
+    
+    position: relative;
+    top: 150px;
+
+}
+
+.animate{
+    animation: jump 600ms;
+}
+
+@keyframes jump{
+    
+    0% {top: 150px;}
+    10% {top: 120px;}
+    20% {top: 110px;}
+    30% {top: 100px;}
+    70% {top: 100px;}
+    80% {top: 100px;}
+    90% {top: 110px;}
+    100% {top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    /*background-color: orange;*/
+    background-image: url(cake-slice.png);
+    background-size: cover;
+    position: relative;
+    top: 130px;
+    left: 450px;
+    animation: block 1.6s infinite linear;
+}
+
+@keyframes block{
+    0% {left: 450px;}
+    100% {left: 0px;}
+}
